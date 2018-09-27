@@ -284,3 +284,12 @@ ul .far{
 h1 .fas{
     text-align: right;
 }
+
+
+
+#messageText{
+    display: flex; 
+    justify-content: flex-start;
+    width: 100%;
+    border: 0px;
+}
