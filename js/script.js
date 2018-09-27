@@ -2,7 +2,7 @@
 console.log("App is alive");
 
 /*Creating currentChannel*/
-var currentChannel=sevenContinents;
+var currentChannel=SevenContinents;
 
 /**
  * #6 #Switcher function for the #channels name in the right app bar
@@ -85,7 +85,7 @@ function Message(text) {
     this.longitude = currentLocation.longitude; /*Number*/
     this.createdOn = new Date(); /*Date*/
     this.expiresOn = new Date(); /*Date*/
-    this.expiredOn.setTime(Date.now() + 1000*60*5 ); //Adds 5 minutes to the creation Date
+    this.expiredOn.setTime(Date.now() + 1000*60*15 ); //Adds 15 minutes to the creation Date
     this.text = text; /*String*/
     this.own = true; /*Boolean*/
 }
@@ -111,3 +111,30 @@ function createMessageElement(messageObject){
     return messageContent;
 }
 
+/*List Channel function*/
+function listChannels(){
+    $('#channels-list').append(createChannelElement(Yummy));
+    $('#channels-list').append(createChannelElement(SevenContinents));
+    $('#channels-list').append(createChannelElement(KillerApp));
+    $('#channels-list').append(createChannelElement(FirstPersonOnMars));
+    $('#channels-list').append(createChannelElement(Octoberfest));
+
+}
+
+function createChannelElement(channelObject){
+
+
+    var starClass = channelObject.starred? "fas fa-star" : "far fa-star";
+    var channelContent = '<li onclick="switchChannel(' +channelObject.name+ ')">' +
+                            '#' +channelObject.name+
+                            '<span class="channel-meta">'+
+                                '<i class="' +starClass+ '" id="'+channelObject.name+'Star"></i>'+
+                                '<i class="fas fa-chevron-right"></i>'+
+                            '</span>'+
+                        '</li>';
+
+    console.log(channelContent);
+    return channelContent;                    
+
+
+}

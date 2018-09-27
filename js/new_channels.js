@@ -4,7 +4,7 @@ console.log("New Channels is alive");
 
 /*Creating Channels*/
 /*1 - Channel Variable Yummy*/
-var yummy = {
+var Yummy = {
     name: "Yummy", /*String*/
     createdOn: new Date(2016, 3, 1), /*Date*/
     createdBy: "minus.plus.yummy", /*String*/
@@ -14,7 +14,7 @@ var yummy = {
 }
 
 /*2 - Channel Variable SevenContinents*/
-var sevenContinents = {
+var SevenContinents = {
     name: "SevenContinents", /*String*/
     createdOn: new Date(2016, 3, 1), /*Date*/
     createdBy: "minus.plus.yummy", /*String*/
@@ -24,7 +24,7 @@ var sevenContinents = {
 }
 
 /*3 - Channel Variable KillerApp*/
-var killerApp = {
+var KillerApp = {
     name: "KillerApp", /*String*/
     createdOn: new Date(2016, 3, 1), /*Date*/
     createdBy: "minus.plus.yummy", /*String*/
@@ -34,7 +34,7 @@ var killerApp = {
 }
 
 /*4 - Channel Variable FirstPersonOnMars*/
-var firstPersonOnMars = {
+var FirstPersonOnMars = {
     name: "FirstPersonOnMars", /*String*/
     createdOn: new Date(2016, 3, 1), /*Date*/
     createdBy: "minus.plus.yummy", /*String*/
@@ -44,7 +44,7 @@ var firstPersonOnMars = {
 }
 
 /*5 - Channel Variable Octoberfest*/
-var octoberfest = {
+var Octoberfest = {
     name: "Octoberfest", /*String*/
     createdOn: new Date(2016, 3, 1), /*Date*/
     createdBy: "minus.plus.yummy", /*String*/

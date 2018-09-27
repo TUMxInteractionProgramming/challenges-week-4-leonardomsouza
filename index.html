@@ -23,7 +23,7 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
 
 </head>
-<body>
+<body onload="listChannels()"> 
 
 <!-- channel area -->
 <div id="channels">
@@ -35,57 +35,8 @@
     </h1>
 
     <!-- CHANNELS -->
-    <ul>
-        <!-- #6 #channels #click calls our switchChannel with the corresponding name as an argument -->
-        <li onclick="switchChannel(yummy)">
-            #Yummy
-            <!-- #5 #channels #icons now grouped in .channel-meta span -->
-            <span class="channel-meta">
-                <i class="far fa-star" id="YummyStar"></i>
-                <!-- #5 #channels #icons now with chevron -->
-                <i class="fas fa-chevron-right"></i>
-            </span>
-        </li>
-        <!-- #6 #channels #click calls our switchChannel with the corresponding name as an argument -->
-        <li class="selected" onclick="switchChannel(sevenContinents)" >
-            #SevenContinents
-            <!-- #5 #channels #icons now grouped in .channel-meta span -->
-            <span class="channel-meta">
-                <i class="fas fa-star" id="SevenContinentsStar"></i>
-                <!-- #5 #channels #icons now with chevron -->
-                <i class="fas fa-chevron-right"></i>
-            </span>
-        </li>
-        <!-- #6 #channels #click calls our switchChannel with the corresponding name as an argument -->
-        <li onclick="switchChannel(killerApp)">
-            #KillerApp
-            <!-- #5 #channels #icons now grouped in .channel-meta span -->
-            <span class="channel-meta">
-                <i class="far fa-star" id="KillerAppStar"></i>
-                <!-- #5 #channels #icons now with chevron -->
-                <i class="fas fa-chevron-right"></i>
-            </span>
-        </li>
-        <!-- #6 #channels #click calls our switchChannel with the corresponding name as an argument -->
-        <li onclick="switchChannel(firstPersonOnMars)">
-            #FirstPersonOnMars
-            <!-- #5 #channels #icons now grouped in .channel-meta span -->
-            <span class="channel-meta">
-                <i class="fas fa-star" id="FirstPersonOnMarsStar"></i>
-                <!-- #5 #channels #icons now with chevron -->
-                <i class="fas fa-chevron-right"></i>
-            </span>
-        </li>
-        <!-- #6 #channels #click calls our switchChannel with the corresponding name as an argument -->
-        <li onclick="switchChannel(octoberfest)">
-            #Octoberfest
-            <!-- #5 #channels #icons now grouped in .channel-meta span -->
-            <span class="channel-meta">
-                <i class="far fa-star" id="OctoberfestStar"></i>
-                <!-- #5 #channels #icons now with chevron -->
-                <i class="fas fa-chevron-right"></i>
-            </span>
-        </li>
+    <ul id="channels-list">
+        
 
     </ul>
 
