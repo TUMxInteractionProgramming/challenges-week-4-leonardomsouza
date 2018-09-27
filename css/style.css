@@ -270,3 +270,17 @@ li.selected {
 .message.own {
     margin-left: 17.5%;
 }
+
+/*Font Awesom*/
+ul .fas{
+    font-size: 24px;
+}
+
+ul .far{
+    font-size: 24px;
+
+}
+
+h1 .fas{
+    text-align: right;
+}
